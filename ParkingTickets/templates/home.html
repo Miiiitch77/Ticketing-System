@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Parking Ticketing System</title>
+  <style>
+    body {
+      background-color: #f5f9ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: navy;
+      margin-top: 40px;
+    }
+    table {
+      margin: 40px auto;
+      border-collapse: collapse;
+      width: 60%;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid navy;
+      padding: 15px;
+    }
+    th {
+      background-color: navy;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #e6ecff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Car Parking System</h1>
+
+  <table>
+    <tr>
+      <th>Parking Duration</th>
+      <th>Charge Rate (Ksh)</th>
+    </tr>
+    <tr><td>0 - 30 minutes</td><td>Free</td></tr>
+    <tr><td>30 minutes - 1 hour</td><td>50</td></tr>
+    <tr><td>1 - 2 hours</td><td>150</td></tr>
+    <tr><td>2 - 3 hours</td><td>200</td></tr>
+    <tr><td>3 - 4 hours</td><td>250</td></tr>
+    <tr><td>4 - 5 hours</td><td>300</td></tr>
+    <tr><td>5 - 6 hours</td><td>350</td></tr>
+    <tr><td>6 - 7 hours</td><td>400</td></tr>
+    <tr><td>7 - 8 hours</td><td>450</td></tr>
+  </table>
+
+  <p style="color: gray;">Use the Admin panel to manage parking records.</p>
+</body>
+</html>
