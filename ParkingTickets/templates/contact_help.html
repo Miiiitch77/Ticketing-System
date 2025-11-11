@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <style>
+            body {
+                background-color: #181818;
+                font-family: 'Segoe UI', Arial, sans-serif;
+                color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+            .header {
+                background: linear-gradient(90deg, #222 60%, #ff9800 100%);
+                color: #fff;
+                padding: 48px 0 24px 0;
+                text-align: center;
+                font-size: 2.8em;
+                font-weight: 800;
+                letter-spacing: 2.5px;
+                border-bottom: 4px solid #ff9800;
+            }
+            .navbar {
+                background: #222;
+                color: #fff;
+                padding: 1.2em 0 1em 0;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 600;
+                border-bottom: 2px solid #ff9800;
+                margin-bottom: 32px;
+            }
+            .navbar a {
+                color: #fff;
+                margin: 0 24px;
+                text-decoration: none;
+                font-weight: 700;
+                padding: 12px 28px;
+                border-radius: 6px;
+                transition: background 0.2s, color 0.2s;
+                display: inline-block;
+                font-size: 1.1em;
+            }
+            .navbar a:hover {
+                background: #ff9800;
+                color: #222;
+            }
+            .container {
+                background: #222;
+                margin: 48px auto;
+                padding: 48px 56px;
+                border-radius: 18px;
+                box-shadow: 0 4px 32px rgba(255, 152, 0, 0.12);
+                max-width: 800px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .button {
+                background: #ff9800;
+                color: #222;
+                border: none;
+                border-radius: 8px;
+                padding: 16px 36px;
+                font-size: 1.2em;
+                font-weight: 700;
+                cursor: pointer;
+                margin: 24px 0;
+                text-decoration: none;
+                transition: background 0.2s, color 0.2s;
+                display: inline-block;
+                box-shadow: 0 2px 8px rgba(255,152,0,0.12);
+            }
+            .button:hover {
+                background: #222;
+                color: #ff9800;
+            }
+            .help-info {
+                background: #181818;
+                border-left: 8px solid #ff9800;
+                padding: 28px 32px;
+                margin: 48px 0;
+                border-radius: 12px;
+                color: #fff;
+                font-size: 1.15em;
+                box-shadow: 0 2px 8px rgba(255,152,0,0.08);
+            }
+        </style>
+    </head>
+    <body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="{% url 'car_registration' %}">Register Car</a>
+        <a href="{% url 'contact_help' %}">Contact & Help</a>
+    </div>
+    <div class="container">
+        <div class="help-info">
+            <h2>Need Assistance?</h2>
+            <p>Help Line: <strong>+254 700 123 456</strong></p>
+            <p>Email: <strong>support@parkingtickets.co.ke</strong></p>
+            <p>Head Office: <strong>1st Floor, ABC Towers, Waiyaki Way, Nairobi</strong></p>
+            <p>For any issues or inquiries, please contact us using the details above.</p>
+        </div>
+        <a href="/" class="button">Back to Home</a>
+    </div>
+</body>
+</html>

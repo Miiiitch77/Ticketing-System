@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Success</title>
+    <style>
+    body { background-color: #181818; font-family: 'Segoe UI', Arial, sans-serif; color: #fff; text-align: center; }
+    .container { margin: 48px auto; width: 420px; background: #222; padding: 40px; border-radius: 18px; box-shadow: 0 4px 32px rgba(255,152,0,0.12); }
+    .success { color: #ff9800; font-size: 1.3em; margin-top: 28px; background: #222; padding: 18px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(255,152,0,0.08); }
+    a { color: #ff9800; font-weight: 700; text-decoration: none; margin-top: 32px; display: inline-block; font-size: 1.1em; }
+    a:hover { color: #fff; background: #ff9800; padding: 6px 18px; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="{% url 'car_registration' %}">Register Car</a>
+        <a href="{% url 'contact_help' %}">Contact & Help</a>
+    </div>
+    <div class="container">
+        <h1 style="color:#ff9800;">Payment Successful!</h1>
+        <div class="success">
+            Thank you for paying <strong>Ksh {{ charge }}</strong> for parking.<br>
+            Car Registration: <strong>{{ parking_record.car_registration }}</strong>
+        </div>
+        <a href="/" class="button">Back to Home</a>
+    </div>
+</body>
+</html>
